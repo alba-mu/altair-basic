@@ -17,7 +17,8 @@ st.write("\n")
 
 line = alt.Chart(airports).mark_bar().encode(
     alt.X('state'),
-    alt.Y('count(name)'),
+    alt.Y('count(name)', axis=alt.Axis(title='Number of airports', labelAngle=0)),
 )
 
 st.write(line)
+

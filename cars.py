@@ -50,3 +50,5 @@ chart = alt.Chart(cars).mark_point().encode(
 ).interactive()
 
 st.altair_chart(chart)
+
+st.write(vega_datasets.data.list_datasets())

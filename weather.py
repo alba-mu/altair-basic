@@ -9,7 +9,14 @@ df = pl.DataFrame({
     'precip': [2.68, 0.87, 5.31, 3.94, 4.13, 3.58, 3.62, 3.98, 2.56]
 })
 
-st.write(df)
+
+if st.checkbox("Show dataset"):
+    st.write("Dataset with information regarding diferent countries:")
+    st.write(df)
+    st.write("\n")
+
+st.write("\n")
+
 
 chart = alt.Chart(df).mark_bar().encode(
     x='average(precip)',
