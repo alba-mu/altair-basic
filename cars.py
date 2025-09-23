@@ -51,4 +51,15 @@ chart = alt.Chart(cars).mark_point().encode(
 
 st.altair_chart(chart)
 
-st.write(vega_datasets.data.list_datasets())
+st.write("\n")
+st.write("Box-plot") #buscar "altair box-plot" per trobar la documentació al respecte
+
+chart = alt.Chart(cars).mark_boxplot().encode(
+    alt.X('Miles_per_Gallon').scale(zero = False),
+    alt.Y('Origin:N'),
+    alt.Tooltip('mean(Miles_per_Gallon)')
+)
+
+st.write(chart)
+st.write("\n")
+
