@@ -3,6 +3,7 @@ import vega_datasets
 import altair as alt
 
 
+
 # Cargar y mostrar dataset de la libreria vega_datasets
 @st.cache_data
 def load_data():
@@ -14,3 +15,4 @@ st.write("Dataset with comparative of the performance of three antibiotics again
 
 st.write(bacteria)
 st.write("\n")
+
