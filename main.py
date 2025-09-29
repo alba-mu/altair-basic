@@ -1,12 +1,13 @@
 import streamlit as st
 
-weather = st.Page("weather.py", title="weather")
-cars = st.Page("cars.py", title="cars")
-airports = st.Page("airports.py", title="airports")
-countries = st.Page("countries.py", title="countries")
-bacteria = st.Page("bacteria.py", title="bacteria")
-stadistics = st.Page("stadistics.py", title="stadistics")
+weather = st.Page("pages/weather.py", title="weather")
+cars = st.Page("pages/cars.py", title="cars")
+airports = st.Page("pages/airports.py", title="airports")
+countries = st.Page("pages/countries.py", title="countries")
+bacteria = st.Page("pages/bacteria.py", title="bacteria")
+stadistics = st.Page("pages/stadistics.py", title="stadistics")
+polars = st.Page("pages/polars.py", title="polars")
 
-pg = st.navigation([weather, cars, airports, countries, bacteria, stadistics])
+pg = st.navigation([weather, cars, airports, countries, bacteria, stadistics, polars])
 st.set_page_config(page_title="Data manager", page_icon=":material/edit:")
 pg.run()
