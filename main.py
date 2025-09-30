@@ -9,7 +9,22 @@ stadistics = st.Page("pages/stadistics.py", title="stadistics")
 polars = st.Page("pages/polars.py", title="polars")
 edades = st.Page("pages/edades.py", title="edades")
 conversor = st.Page("pages/conversor_moneda.py", title="conversor de moneda")
+tycho = st.Page("pages/tycho.py", title="tycho")
 
-pg = st.navigation([weather, cars, airports, countries, bacteria, stadistics, polars, edades, conversor])
+pg = st.navigation(
+    [
+        weather,
+        cars,
+        airports,
+        countries,
+        bacteria,
+        stadistics,
+        polars,
+        edades,
+        conversor,
+        tycho
+    ]
+)
+
 st.set_page_config(page_title="Data manager", page_icon=":material/edit:")
 pg.run()
